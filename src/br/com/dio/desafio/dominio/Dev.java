@@ -63,11 +63,17 @@ public class Dev {
     }
 
     public void soutConteudosInscritos(){
-        System.out.println("Conteúdos Inscritos " + this.getNome() + ": " + this.getConteudosInscritos());
+        System.out.println("Conteúdos Inscritos " + this.getNome() + ": ");
+        for (Conteudo conteudo: this.getConteudosInscritos()){
+            conteudo.soutConteudo();
+        }
     }
 
     public void soutConteudosConcluidos(){
-        System.out.println("Conteúdos Concluídos " + this.getNome() + ": " + this.getConteudosConcluidos());
+        System.out.println("Conteúdos Concluídos " + this.getNome() + ": ");
+        for (Conteudo conteudo: this.getConteudosConcluidos()){
+            conteudo.soutConteudo();
+        }
     }
 
     @Override

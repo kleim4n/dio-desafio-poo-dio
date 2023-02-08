@@ -24,4 +24,8 @@ public abstract class Conteudo {
     public void setDescricao(String descricao) {
         this.descricao = descricao;
     }
+
+    public void soutConteudo(){
+        System.out.println("Titulo:\t\t" + this.titulo + "\nDescrição:\t" + this.descricao);
+    }
 }
