@@ -62,6 +62,14 @@ public class Dev {
         this.conteudosConcluidos = conteudosConcluidos;
     }
 
+    public void soutConteudosInscritos(){
+        System.out.println("Conteúdos Inscritos " + this.getNome() + ": " + this.getConteudosInscritos());
+    }
+
+    public void soutConteudosConcluidos(){
+        System.out.println("Conteúdos Concluídos " + this.getNome() + ": " + this.getConteudosConcluidos());
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
